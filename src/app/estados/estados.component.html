@@ -1,0 +1,11 @@
+<h3>estados works!</h3>
+<select id="ufs" [name]="name" (change)="onSelectedValueChange($event)" >
+@for (estado of estados; track estado.sigla) {
+	<option value="{{estado.id}}">{{estado.sigla}} - {{estado.nome}}</option>
+}
+</select>
+<ol id="cidades">
+    @for (cidade of cidades; track cidade.id) {
+        <li>{{cidade.nome}}</li>
+    }
+</ol>

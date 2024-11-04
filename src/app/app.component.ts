@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { EstadosComponent } from './estados/estados.component';
+import { CidadesComponent } from "./cidades/cidades.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [EstadosComponent, CidadesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'tutor01';
+  title = 'IBGE';
 }
